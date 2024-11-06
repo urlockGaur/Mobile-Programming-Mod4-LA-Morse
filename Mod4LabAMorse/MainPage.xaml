@@ -1,0 +1,71 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mod4LabAMorse.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <!-- Header and Logo -->
+            <Image
+                Source="morsecode.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="morse code app logo" />
+
+            <Label
+                Text="Uncle Morse Coder"
+                Style="{StaticResource Headline}"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Message Display for Current Keyboard -->
+            <Label
+                x:Name="TheText"
+                Text="AAA"
+                Style="{StaticResource SubHeadline}"
+                HorizontalOptions="Center" />
+
+            <!-- Morse Code Display for Each Keyboard -->
+            <Label x:Name="Keyboard1Code" Text="Keyboard 1 Code: ..." 
+                   Style="{StaticResource SubHeadline}" HorizontalOptions="Center" IsVisible="True"/>
+            <Label x:Name="Keyboard2Code" Text="Keyboard 2 Code: ..." 
+                   Style="{StaticResource SubHeadline}" HorizontalOptions="Center" IsVisible="False"/>
+
+            <!-- Switch for Keyboard Toggle -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="0,10,0,20">
+                <Label x:Name="ToggleLabel" Text="Keyboard 1" VerticalOptions="Center" />
+                <Switch x:Name="KeyboardToggle" Toggled="OnToggleKeyboard" />
+            </HorizontalStackLayout>
+
+            <!-- Keyboard Layouts -->
+            <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+
+                <!-- Keyboard 1 -->
+                <Label x:Name="Keyboard1Label" Text="Keyboard 1: Dot, Dash, Space" 
+                       HorizontalOptions="Center" IsVisible="True" FontAttributes="Bold" />
+
+                <HorizontalStackLayout x:Name="Keyboard1" IsVisible="True" Spacing="20" HorizontalOptions="Center">
+                    <Button x:Name="DotBtn1" Text="Dot" Clicked="OnDotClicked1" HorizontalOptions="CenterAndExpand" />
+                    <Button x:Name="DashBtn1" Text="Dash" Clicked="OnDashClicked1" HorizontalOptions="CenterAndExpand" />
+                    <Button x:Name="SpaceBtn1" Text="Space" Clicked="OnSpaceClicked1" HorizontalOptions="CenterAndExpand" />
+                </HorizontalStackLayout>
+
+                <!-- Keyboard 2 -->
+                <Label x:Name="Keyboard2Label" Text="Keyboard 2: Dot, Dash, Space" 
+                       HorizontalOptions="Center" IsVisible="False" FontAttributes="Bold" />
+
+                <HorizontalStackLayout x:Name="Keyboard2" IsVisible="False" Spacing="20" HorizontalOptions="Center">
+                    <Button x:Name="DotBtn2" Text="Dot" Clicked="OnDotClicked2" HorizontalOptions="CenterAndExpand" />
+                    <Button x:Name="DashBtn2" Text="Dash" Clicked="OnDashClicked2" HorizontalOptions="CenterAndExpand" />
+                    <Button x:Name="SpaceBtn2" Text="Space" Clicked="OnSpaceClicked2" HorizontalOptions="CenterAndExpand" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

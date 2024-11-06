@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod4LabAMorse", "Mod4LabAMorse\Mod4LabAMorse.csproj", "{7FD09C48-490D-4B87-A4E2-72558FEFE024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD09C48-490D-4B87-A4E2-72558FEFE024}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DF4861E-19B2-4DC4-ADCA-19C0FBAA4577}
+	EndGlobalSection
+EndGlobal
